@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+}
+
+header {
+    background: #0047ff;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+header p {
+    margin: 5px 0 10px;
+    font-size: 16px;
+}
+
+.quiz-container {
+    width: 70%;
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.question-box {
+    background: #ffffff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.question-box p {
+    font-size: 16px;
+}
+
+.example-box {
+    width: 70%;
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.box-model {
+    background: #f9ffb0;
+    border: 3px solid blue;
+    padding: 20px;
+    width: 260px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.box-model p {
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.position-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #0047ff;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.position-btn:hover {
+    background: #0034c1;
+}
+
+.form-buttons {
+    margin-top: 20px;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.button.submit {
+    background-color: #0074ff;
+    color: white;
+}
+
+.button.submit:hover {
+    background-color: #005cd1;
+}
+
+
+.button.refresh {
+    background-color: #666;
+    color: white;
+}
+
+.button.refresh:hover {
+    background-color: #444;
+}
