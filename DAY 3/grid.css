@@ -1,0 +1,138 @@
+/* RESET */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* ----------- DESKTOP DEFAULT GRID (LARGE SCREENS) ----------- */
+body {
+    display: grid;
+    height: 100vh;
+
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 80px 1fr 70px;
+
+    grid-template-areas:
+        "header header header"
+        "nav main aside"
+        "footer footer footer";
+}
+
+/* GRID AREAS */
+.header {
+    grid-area: header;
+    background: #0047ff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.nav {
+    grid-area: nav;
+    background: #2c2c2c;
+    color: yellow;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.main {
+    grid-area: main;
+    background: #f9f9f9;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.aside {
+    grid-area: aside;
+    background: #0077ff;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.footer {
+    grid-area: footer;
+    background: #333;
+    color: wheat;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+/* FLEXBOX INSIDE GRID (VERTICAL ITEMS) */
+.flexContainer {
+    display: flex;
+    flex-direction: column;  
+    gap: 15px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.flexItem {
+    background: #ffcc00;
+    border: 2px solid #333;
+    color: #333;
+    height: 80px;
+    width: 80px;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 22px;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+
+    body {
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto auto auto auto auto;
+
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "aside"
+            "footer";
+    }
+
+    .main {
+        text-align: center;
+    }
+
+    .flexContainer {
+        flex-direction: row;     /* horizontal on mobile */
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .flexItem {
+        height: 60px;
+        width: 60px;
+        font-size: 18px;
+    }
+}
+
+
+@media (min-width: 600px) and (max-width: 900px) {
+
+    body {
+        grid-template-columns: 150px 1fr;
+        grid-template-areas:
+            "header header"
+            "nav main"
+            "aside footer";
+    }
+
+    .flexContainer {
+        flex-direction: column;  
+        align-items: flex-start;
+    }
+
+    .flexItem {
+        margin-left: 20px;
+    }
+}

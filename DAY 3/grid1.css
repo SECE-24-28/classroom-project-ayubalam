@@ -1,0 +1,94 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    grid-template-rows: 80px 1fr;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(to bottom, #d7d7d7, #f2f2f2);
+}
+
+
+.sidebar {
+    grid-row: 1 / span 2;
+    background: #1a1a1a;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar h3 {
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    font-size: 18px;
+    margin-bottom: 18px;
+    color: #ddd;
+}
+
+.sidebar li:hover {
+    color: #ffffff;
+    cursor: pointer;
+}
+
+
+.header {
+    grid-column: 2 / 3;
+    background: #003cff;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+
+.main {
+    padding: 20px;
+    overflow-y: auto;
+}
+
+
+.stats-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.stat-box {
+    background: #ffffff;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+
+.cards {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
