@@ -32,7 +32,7 @@ h2 {
     margin-left: 300px;
 
     
-    margin-top: 40px;
+    margin-top: 50px;
 
     padding: 10px 40px;
 }
@@ -52,7 +52,8 @@ h2 {
 .cards-container {
     margin-left: 300px;   
     margin-top: 30px;
-    padding: 20px 40px;
+    padding: 30px 50px;
+    text-align: center;
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -65,6 +66,6 @@ h2 {
     font-size: 18px;
     font-weight: 500;
 
-    border: 1px solid #ddd;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    border:solid purple ;
+    box-shadow: blue;
 }
